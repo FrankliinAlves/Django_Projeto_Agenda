@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'contact',
+    'contact', # app do projeto adicionado
 ]
 
 MIDDLEWARE = [
@@ -55,9 +55,9 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
+        'DIRS': [ # Especifica um diretório adicional para o Django procurar por templates
             BASE_DIR / 'base_templates'
-        ],
+        ], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# Especifica diretórios adicionais para o Django procurar por arquivos estáticos
 STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
