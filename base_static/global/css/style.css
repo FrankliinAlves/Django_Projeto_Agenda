@@ -1,3 +1,7 @@
 body {
-    background: rgb(201, 203, 226);
+    background: rgb(192, 211, 190);
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
